@@ -1,8 +1,5 @@
 ---
 layout: post
-title:  "Build Rails forms using Vuejs and Webpacker"
-date:   2017-07-27
-categories: jekyll update
 ---
 About a month ago I started using Vuejs with a work project and I enjoyed every minute of it. I want to spread a bit of knowledge on how easy it is to build a form using Vuejs with Rails. Overall, this is a very high level of using Vuejs in a Rails application. I do hope that it helps out others get started and make adjustments along the way.
 
@@ -207,4 +204,3 @@ rails s
 Now that we have our Vuejs form up and running, I invite you to challenge yourselves and do more. This was an introductory to getting a Vuejs form up and running, but it could be improved. Think about using `ActionCable` to publish the `Todo`'s to the view. Also write some tests. I purposely left those out ;).
 
 If you got lost or something isn't working, check out the repo: [https://github.com/jd-gray/vue-js-rails](https://github.com/jd-gray/vue-js-rails){:target="_blank"}
-
