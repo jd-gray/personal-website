@@ -1,41 +1,41 @@
-title: Jared Gray
-author: Jared Gray
-email: jared@jaredgray.us
-description: >
-  Software developer living in Gilbert, AZ. Available for contract for software projects or website design and building.
-baseurl: "/"
-url: "https://jd-gray.github.io/jared_blog"
-github_username:  jd-gray
-instagram_username: jdgray8
-social:
-  name: Jared Gray
-  links:
-    - https://www.linkedin.com/in/jareddgray
-    - https://github.com/jd-gray
-
-disqus:
-  shortname: jareddgray
-
 # Build settings
+permalink: /blog/:year/:title/
 markdown: kramdown
-highlighter: rouge # or pygments or null
-exclude:
-  - README.md
-  - node_modules
-  - package.json
-  - package-lock.json
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - npm-debug.log
-  - gulpfile.js
+highlighter: rouge
+plugins: [jekyll-paginate]
 
-include: ['_pages']
-permalink: /:title/
+paginate: 3
+paginate_path: "/blog/page/:num/"
+comments: true
 
-compress_html:
-  clippings: all
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
 
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+# SEO settings
+title: Jared Gray
+description: "Software developer living in Gilbert, AZ. Available for contract for software projects or website design and building."
+keywords: "Software, Engineer, Gilbert, Phoenix, Web Development, Jared Gray"
+url: https://www.jared-gray.com
+
+google_analytics: UA-60775504-1
+repo: http://github.com/jd-gray/jared_blog
+
+# Author settings
+author:
+  name: Jared Gray
+  bio: "Software Engineer and Triathlete"
+  thumb: /images/author.jpg
+  email: jared@jaredgray.us
+  url: https://jared-gray.com
+  github: https://github.com/jd-gray
+  linkedin: https://www.linkedin.com/in/jareddgray/
+
+# navbar pages
+navbar:
+  - slug: blog
+    title: Blog
+
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md"]
