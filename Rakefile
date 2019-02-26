@@ -3,6 +3,7 @@ require "rubygems"
 require "tmpdir"
 require "bundler/setup"
 require "jekyll"
+require "bourbon"
 
 GITHUB_REPONAME = "jd-gray/jared_blog"
 GITHUB_REPO_BRANCH = "master"
