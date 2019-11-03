@@ -1,11 +1,9 @@
-import React from "react";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
+import React, { ReactElement } from "react";
 import Section from "./Section";
 
-library.add(fab);
+import "./Styles.scss";
 
-const App: React.FC = () => {
+const App = (): ReactElement => {
   return <Section />;
 };
 
