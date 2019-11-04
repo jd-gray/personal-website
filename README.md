@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/104d8b4b8c53b2f09999/maintainability)](https://codeclimate.com/github/jd-gray/personal-website/maintainability)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
