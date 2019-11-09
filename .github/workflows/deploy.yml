@@ -1,27 +1,21 @@
-name: Deploy React App
+name: Build and Deploy
 on:
   push:
     branches:
       - master
-
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x]
     steps:
-      - uses: actions/checkout@v1
-      - name: Use node.js $ {{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Install Dependencies
-        run: npm install
-      - name: Deploy
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --global user.email "jaredgray.dev@gmail.com"
-          git config --global user.name "jd-gray"
-          npm run deploy
+          BASE_BRANCH: master
+          BRANCH: gh-pages
+          FOLDER: build
+          BUILD_SCRIPT: npm install && npm run deploy
+          CNAME: jaredgray.dev
