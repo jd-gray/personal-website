@@ -47,7 +47,7 @@ const Section = (): ReactElement => {
           <div>
             <a
               style={stravaLinkStyles}
-              href="http://strava.com/athletes/jaredgray"
+              href="https://strava.com/athletes/jaredgray"
               target="_clean"
             >
               Follow me on
