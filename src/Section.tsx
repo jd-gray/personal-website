@@ -27,7 +27,7 @@ const Section = (): ReactElement => {
       <div className="hero-body">
         <div className="container has-text-centered">
           <h1 className="title is-2">Hello I'm Jared Gray</h1>
-          <br />
+          <h2 className="subtitle">Software Engineer + Hobbyist Triathlete</h2>
           <div className="subtitle is-3">
             <a
               href="https://stackoverflow.com/users/4735914/jdgray"
