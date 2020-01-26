@@ -44,20 +44,33 @@ const Section = (): ReactElement => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
-          <a
-            style={stravaLinkStyles}
-            href="http://strava.com/athletes/jaredgray"
-            target="_clean"
-          >
-            Follow me on
-            <img
-              src="http://badges.strava.com/logo-strava.png"
-              alt="Strava"
-              style={stravaImgStyles}
-              height={13}
-              width={51}
-            />
-          </a>
+          <div>
+            <a
+              style={stravaLinkStyles}
+              href="http://strava.com/athletes/jaredgray"
+              target="_clean"
+            >
+              Follow me on
+              <img
+                src="http://badges.strava.com/logo-strava.png"
+                alt="Strava"
+                style={stravaImgStyles}
+                height={13}
+                width={51}
+              />
+            </a>
+          </div>
+          <br />
+          <div>
+            <iframe
+              title={"Strava Runs"}
+              height={454}
+              width={300}
+              frameBorder={0}
+              scrolling={"no"}
+              src="https://www.strava.com/athletes/22902963/latest-rides/a38607e218a72132512d10f5fe32637df2ce826a"
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>
