@@ -60,17 +60,6 @@ const Section = (): ReactElement => {
               />
             </a>
           </div>
-          <br />
-          <div>
-            <iframe
-              title={"Strava Runs"}
-              height={454}
-              width={300}
-              frameBorder={0}
-              scrolling={"no"}
-              src="https://www.strava.com/athletes/22902963/latest-rides/a38607e218a72132512d10f5fe32637df2ce826a"
-            ></iframe>
-          </div>
         </div>
       </div>
     </section>
